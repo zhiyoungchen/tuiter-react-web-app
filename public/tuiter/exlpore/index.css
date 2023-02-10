@@ -69,3 +69,37 @@
   width: 10%;
   float: left;
 }
+
+.wd-topmargin {
+  margin-top: 30px;
+}
+
+.wd-marginleft{
+  margin-left: 10px;
+}
+.wd-img{
+  float:left;
+  position: relative;
+  left:13px;
+  border-radius: 50%;
+  max-height: 48px;
+  max-width: 48px;
+}
+
+.wd-borderunder{
+  border-bottom: dodgerblue;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+
+.wd-grey_text{
+  color: darkgrey;
+}
+
+.wd-black_text{
+  color: black;
+}
+
+.wd-background_grey{
+  background-color: darkgrey;
+}
