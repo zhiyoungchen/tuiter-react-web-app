@@ -1,0 +1,113 @@
+.wd-first{
+  border-radius: 16px;
+  background: darkgray;
+  color: white;
+  position: relative;
+  left: 12px;
+}
+.wd-highlight{
+  color: rgb(29, 161, 242);
+  padding: 16px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: rgb(29, 161, 242);
+  background: black;
+  position: relative;
+  left: 12px;
+  font-size: 15px;
+}
+
+.wd-others{
+  color: rgb(110, 118, 125);
+  padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  background: black;
+  position: relative;
+  left: 12px;
+  font-size: 15px;
+}
+
+.wd-partchightlight{
+  position: relative;
+  left: 12px;
+  color:rgb(110,118,125);
+  font-size:13px;
+}
+.wd-partcothers{
+  position: relative;
+  left:12px;
+  font-size: 10px;
+}
+
+.wd-imageright{
+  float: right;
+  position: relative;
+  right:16px;
+}
+
+.wd-partE{
+  color: lightgray;
+  position: relative;
+  left:12px;
+}
+
+.grid-row {
+  clear: both;
+}
+.grid-col-left-sidebar {
+  width: 10%;
+  float: left;
+}
+.grid-col-main-content {
+  width: 10%;
+  float: left;
+}
+.grid-col-right-sidebar {
+  width: 10%;
+  float: left;
+}
+
+.wd-topmargin {
+  margin-top: 30px;
+}
+
+.wd-marginleft{
+  margin-left: 10px;
+}
+.wd-img{
+  float:left;
+  position: relative;
+  left:13px;
+  border-radius: 50%;
+  max-height: 48px;
+  max-width: 48px;
+}
+
+.wd-borderunder{
+  border-bottom: dodgerblue;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+
+.wd-grey_text{
+  color: darkgrey;
+}
+
+.wd-black_text{
+  color: black;
+}
+
+.wd-background_grey{
+  background-color: darkgrey;
+}
+
+.wd-title_text{
+  color: lightgrey;
+}
+
+.wd-body_text{
+  color: white;
+}
