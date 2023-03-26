@@ -1,0 +1,113 @@
+[
+  {
+    "_id": "001",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "ReactJS"
+    },
+    "liked": true,
+    "verified": false,
+    "handle": "ReactJS",
+    "time": "1h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "tuit": "One foot in front of the other, One more step, and then one more. Jack's only thoughts were to keep moving no matter how much his body screamed to stop and rest. He's lost almost all his energy and his entire body ached beyond belief, but he forced himself to take another step. Then another. And then one more..",
+    "attachments": {
+      "image": "../../../images/as.jpeg"
+      },
+    "logo-image": "../../../images/react.png",
+    "avatar-image": "../../../images/react.png",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "567",
+    "topic": "Space",
+    "postedBy": {
+      "username": "SpaceX"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "spacex",
+    "title": "",
+    "tuit": "Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen.",
+    "attachments": {
+    "image": "../../../images/nasa.png"
+    },
+    "time": "last month",
+    "logo-image": "../../../images/nasa.png",
+    "avatar-image": "../../../images/nasa.png",
+    "tuits": "120K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "234",
+    "topic": "Space",
+    "postedBy": {
+      "username": "Scott Manley"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "DJSnM",
+    "postedOn": "2020-12-10",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "logo-image": "../../../images/js.png",
+    "avatar-image": "../../../images/js.png",
+    "tuits": "123K",
+    "stats": {
+      "comments": 999,
+      "retuits": 999,
+      "likes": 999
+    }
+  },
+  {
+    "_id": "345",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "jQuery"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "jQuery",
+    "title": "jQuery",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last week",
+    "logo-image": "../../../images/jq.png",
+    "avatar-image": "../../../images/jq.png",
+    "tuits": "122K",
+    "stats": {
+      "comments": 999,
+      "retuits": 999,
+      "likes": 999
+    }
+  },
+  {
+    "_id": "456",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "NodeJS"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "NodeJS",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last month",
+    "logo-image": "../../images/nodejs.png",
+    "avatar-image": "../../images/nodejs.png",
+    "tuits": "120K",
+    "stats": {
+      "comments": 999,
+      "retuits": 999,
+      "likes": 999
+    }
+  }
+]

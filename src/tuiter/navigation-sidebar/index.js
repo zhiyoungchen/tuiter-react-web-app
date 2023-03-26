@@ -1,8 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Routes, Route} from "react-router";
 
 const NavigationSidebar = () => {
   const {pathname} = useLocation();
@@ -17,9 +15,18 @@ const NavigationSidebar = () => {
         <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
           Explore
         </Link>
+        <Link to="/tuiter/ProfileScreen" className={`list-group-item ${active === 'ProfileScreen'?'active':''}`}>
+          Profile
+        </Link>
         <Link to="/" className="list-group-item">
           Labs
         </Link>
+        <a className={`list-group-item ${active === 'more'?'active':''}`}>
+          Notifications
+        </a>
+        <a className={`list-group-item ${active === 'more'?'active':''}`}>
+          Messages
+        </a>
         <a className={`list-group-item ${active === 'more'?'active':''}`}>
           More
         </a>
