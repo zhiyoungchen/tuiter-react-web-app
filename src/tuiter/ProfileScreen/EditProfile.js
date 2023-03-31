@@ -57,7 +57,6 @@ const EditProfile = ({setEdit}) => {
 
 
   const saveChangesHandler = () => {
-    //console.log(profileInfo);
     console.log("pressed save button!");
     const modifyProfileAction = {
       type: "modify-profile",
@@ -65,7 +64,6 @@ const EditProfile = ({setEdit}) => {
     };
     dispatch(modifyProfileAction);
 
-    // modify state, and pass state to parent component
     return setEdit(false);
   }
 

@@ -1,9 +1,6 @@
 import React from "react";
-import NavigationSidebar from "../navigation-sidebar";
-import CenterPost from "../PostList/PostItem";
-import PostSummaryList from "../post-summary-list";
 import WhatsHappening from "../WhatsHappening/whats-happening";
-import TuitsList from "../tuits/TuitsList";
+import TuitsList from "../tuits/tuit-list";
 
 
 const HomeComponent = () => {

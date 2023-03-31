@@ -1,77 +1,55 @@
-// import { createSlice } from "@reduxjs/toolkit";
-// import tuits from "./tuits.json";
+import {createSlice}
+  from "@reduxjs/toolkit";
+import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk}
+  from "../../services/tuits-thunks";
 
-// const currentUser = {
-//  "userName": "NASA",
-//  "handle": "@nasa",
-//  "image": "nasa.png",
-// };
+const initialState = {
+   tuits: [],
+   loading: false
+}
 
-// const templateTuit = {
-//  ...currentUser,
-//  "topic": "Space",
-//  "time": "2h",
-//  "liked": false,
-//  "replies": 0,
-//  "retuits": 0,
-//  "likes": 0,
-// }
-
-// const tuitsSlice = createSlice({
-//  name: 'tuits',
-//  initialState: tuits,
-//  reducers: {
-//    createTuit(state, action) {
-//      state.unshift({
-//        ...action.payload,
-//        ...templateTuit,
-//        _id: (new Date()).getTime(),
-//      })
-//    }
-//  }
-// });
-
-// export const {createTuit} = tuitsSlice.actions;
-// export default tuitsSlice.reducer;
-
-import tuits from "../data/tuits.json";
-
-const tuitsReducer = (state = tuits, action) => {
-  switch (action.type) {
-    case "like-tuit":
-      return state.map((tuit) => {
-        if (tuit._id === action.tuit._id) {
-          if (tuit.liked === true) {
-            tuit.liked = false;
-            tuit.stats.likes--;
-          } else {
-            tuit.liked = true;
-            tuit.stats.likes++;
-          }
-          return tuit;
-        } else {
-          return tuit;
-        }
-      });
-    case "delete-tuit":
-      return state.filter((tuit) => tuit._id !== action.tuit._id);
-    case "create-tuit":
-      const newTuit = {
-        tuit: action.tuit,
-        _id: new Date().getTime() + "",
-        postedBy: {
-          username: "ReactJS",
-        },
-        stats: {
-          retuits: 111,
-          likes: 222,
-          replies: 333,
-        },
-      };
-      return [newTuit, ...state];
-    default:
-      return tuits;
+const tuitsSlice = createSlice({
+ name: 'tuits',
+ initialState,
+ extraReducers: {
+   [findTuitsThunk.pending]:
+      (state) => {
+         state.loading = true
+         state.tuits = []
+   },
+   [findTuitsThunk.fulfilled]:
+      (state, { payload }) => {
+         state.loading = false
+         state.tuits = payload
+   },
+   [findTuitsThunk.rejected]:
+      (state, action) => {
+         state.loading = false
+         state.error = action.error
+   },
+   [deleteTuitThunk.fulfilled] :
+   (state, { payload }) => {
+   state.loading = false
+   state.tuits = state.tuits
+     .filter(t => t._id !== payload)
+   },
+   [createTuitThunk.fulfilled]:
+   (state, { payload }) => {
+     state.loading = false
+     state.tuits.push(payload)
+   },
+   [updateTuitThunk.fulfilled]:
+  (state, { payload }) => {
+    state.loading = false
+    const tuitNdx = state.tuits
+      .findIndex((t) => t._id === payload._id)
+    state.tuits[tuitNdx] = {
+      ...state.tuits[tuitNdx],
+      ...payload
+    }
   }
-};
+},
+ reducers: { }
+});
 
-export default tuitsReducer;
+export default tuitsSlice.reducer

@@ -1,4 +1,5 @@
 import React from "react";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import "./tuit.css";
 import TuitStats from "./TuitStats";
@@ -6,7 +7,7 @@ import TuitStats from "./TuitStats";
 const TuitListItem = ({ tuit }) => {
   const dispatch = useDispatch();
   const deleteTuitClickHandler = () => {
-    dispatch({ type: "delete-tuit", tuit });
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
