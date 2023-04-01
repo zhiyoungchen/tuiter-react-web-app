@@ -1,6 +1,0 @@
-[submodule "tuiter-react-web-app"]
-	path = tuiter-react-web-app
-	url = https://github.com/zhiyoungchen/tuiter-react-web-app
-[submodule "vendors"]
-	path = vendors
-	url = https://github.com/zhiyoungchen/tuiter-react-web-app.git
