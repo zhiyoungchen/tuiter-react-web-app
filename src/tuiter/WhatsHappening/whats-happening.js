@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-// import {createTuitThunk}
-//   from "../../services/tuits-thunks";
+import {createTuitThunk}
+  from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening] = useState('');
+    const [whatsHappening, setWhatsHappening] = useState('');
+
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
       const newTuit = {
-        type: "create-tuit",
-        tuit: whatsHappening,
+        tuit: whatsHappening
       }
-      dispatch(createTuit(newTuit));
+      dispatch(createTuitThunk(newTuit));
     }
    
  return (
