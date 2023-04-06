@@ -13,6 +13,7 @@ import ProfileScreen from "./ProfileScreen";
 const store = configureStore({
   reducer: {
    who: whoReducer,
+   tuits: tuitsReducer,
    tuitsData: tuitsReducer}});
 
 function Tuiter() {
