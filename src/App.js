@@ -8,6 +8,11 @@ import tuitsReducer from "./tuiter/reducers/tuits-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import mongoose from "mongoose";
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+// mongoose.connect('mongodb://127.0.0.1:27017/tuiter');
+mongoose.connect("mongodb+srv://zhiyoungchen:<cancer7120>@cluster0.bncaje3.mongodb.net/?retryWrites=true&w=majority");
+
 const store = configureStore(
     {reducer: {who: whoReducer, tuits: tuitsReducer}});
 export default class App extends Component {
